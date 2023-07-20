@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_red"
+            android:gravity="center"
+            android:text="Thêm Coffee"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingLeft="10dp"
+                android:text="Đường dẫn ảnh: "
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/edt_dialog_listfood_add_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Tên Coffee: "
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/edt_dialog_listfood_add_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Giá: "
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/edt_dialog_listfood_add_price"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nội Dung: "
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/edt_dialog_listfood_add_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dialog_listfood_add_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/main_red"
+                android:text="Thêm" />
+
+            <Button
+                android:id="@+id/btn_dialog_listfood_add_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/main_red"
+                android:text="Thoát" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

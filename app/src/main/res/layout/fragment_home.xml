@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/boder_radius_cardview_bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coffee"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boder_radius_search"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ed_fragment_home_search"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="5"
+                android:background="@color/white"
+                android:hint="Nhập tên coffee mà bạn cần tìm"
+                android:paddingLeft="10dp" />
+
+            <ImageButton
+                android:id="@+id/btn_fragment_home_tapSearch"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/icon_search1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/banner" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/circle_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_marginHorizontal="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="110dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Hôm nay có gì ?"
+                android:textColor="@color/main_red"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy_fragment_home_listFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

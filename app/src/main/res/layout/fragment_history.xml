@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#AF4C2C"
+        app:title="Lịch sử đặt hàng"
+        app:titleTextColor="@color/white" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/History_ry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/toolbar_food"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/boder_radius_cardview_bottom"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bee Coffee"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boder_radius_search"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ed_fragment_listFood_search"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="5"
+                android:background="@color/white"
+                android:hint="Nhập tên coffe mà bạn cần tìm"
+                android:paddingLeft="10dp" />
+
+            <ImageButton
+                android:id="@+id/btn_fragment_listFood_tapSearch"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/icon_search1" />
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar_food"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Danh sách đồ uống"
+                android:textColor="@color/main_red"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recy_fragment_listFood_listFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp" />
+        </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_fragment_listFood_tapAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/main_red"
+        android:src="@drawable/ic_add_3" />
+
+
+
+
+
+</RelativeLayout>

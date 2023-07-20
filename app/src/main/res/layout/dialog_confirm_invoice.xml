@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_red"
+            android:gravity="center"
+            android:text="Xác Nhận Đơn Hàng"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingLeft="10dp"
+                android:text="Người Nhận: "
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:textSize="20dp"
+                android:id="@+id/tv_dialog_invoice_confirm_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Địa chỉ: "
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/ed_dialog_invoice_confirm_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="10dp"
+                android:text="Số Điện Thoại: "
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/ed_dialog_invoice_confirm_phone"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="10dp"
+                android:text="Thời gian: "
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tv_dialog_invoice_confirm_date"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nội Dung: "
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tv_dialog_invoice_confirm_content"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="10dp"
+                android:text="Tổng Tiền: "
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tv_dialog_invoice_confirm_priceSum"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_dialog_invoice_add_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/main_red"
+                android:text="Thêm" />
+
+            <Button
+                android:id="@+id/btn_dialog_invoice_add_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/main_red"
+                android:text="Thoát" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

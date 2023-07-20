@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_ListFood"
+        android:title="Danh Sách"
+        android:icon="@drawable/baseline_home_24"
+        />
+    <item android:id="@+id/action_ListRequestt"
+        android:title="Phản Hồi"
+        android:icon="@drawable/baseline_email_24"/>
+    <item android:id="@+id/action_List_Invo"
+        android:title="Đơn Hàng"
+
+        android:icon="@drawable/icon_invoice"
+        />
+    <item android:id="@+id/action_Statis"
+        android:title="Thống Kê"
+        android:icon="@drawable/icon_statis"/>
+    <item android:id="@+id/action_User"
+        android:title="User"
+        android:icon="@drawable/baseline_account_circle_24"/>
+</menu>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:background="@drawable/hinhcho"
+    tools:context=".activity.ChangePassActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Đổi Mật Khẩu"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="5dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edOldPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mật khẩu cũ"
+                    android:inputType="textPassword"
+                    app:passwordToggleEnabled="true"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                app:passwordToggleEnabled="true"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edNewPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mật khẩu mới"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                app:passwordToggleEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edReNewPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập lại mật khẩu mới"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_changePass"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#9E4023"
+                    android:text="Đổi mật khẩu" />
+                <Button
+                    android:id="@+id/btn_changePass_cancel"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#9E4023"
+                    android:text="Quay Lại" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:background="@color/black"
+    android:layout_margin="15dp">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Mã Đơn:"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/id_cart"
+            android:textStyle="bold"
+            android:text="vn-001"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Số Điện Thoại:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/id_phone"
+                android:textStyle="bold"
+                android:text="0983927037"
+                android:layout_margin="10dp"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Họ tên:"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/id_hoten"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="triệu tiến sáng"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Địa chỉ:"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/id_address"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="25/5 trần hưng đạo - thanh xuân- hà nội "
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Time:"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/id_time"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text=" triệu tiến sáng"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Nội Dung:"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/id_noidung"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="triệu tiến sáng"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Tổng Tiền:"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/id_sum"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="500000"
+                android:textSize="15dp"
+                android:textColor="@color/main_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="đ"
+                android:textColor="@color/main_red"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
